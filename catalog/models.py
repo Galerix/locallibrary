@@ -103,7 +103,7 @@ class BookInstance(models.Model):
         """
         String para representar el Objeto del Modelo
         """
-        return '%s (%s)' % (self.id,self.book.title)
+        return self.book.title
 
 
 
